@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion : '2018-07-01'
+Transform: AWS::Serverless-2018-07-01
+Description: Writing my first serverless application.
+Resources:
+  POJOHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.unit1.pojohandler.POJOHandler::handleRequest
+    ##  CodeUri: ./build/libs/AWS-Lambda.jar <!--works-->
+      CodeUri: ./build/distributions/AWS-Lambda.zip
+      Runtime: java8
+      Timeout: 999
+  LoggingHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.unit1.logging.LoggingHandler::handleRequest
+      CodeUri: ./build/distributions/AWS-Lambda.zip
+      Runtime: java8
+      Timeout: 999
+  StreamHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.unit1.streamhandler.StreamHandler::handleRequest
+      CodeUri: ./build/distributions/AWS-Lambda.zip
+      Runtime: java8
+      Timeout: 999

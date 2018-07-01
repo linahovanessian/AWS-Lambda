@@ -11,7 +11,7 @@ public class POJOHandler implements RequestHandler<RequestClass, ResponseClass> 
 
     @Override
     public ResponseClass handleRequest(RequestClass input, Context context) {
-        String greetingMessage = "Hello " + input.toString();
+        String greetingMessage = "Hello " + input.getFirstName() + " " + input.getLastName();
 
 
         return new ResponseClass( greetingMessage );
