@@ -1,5 +1,0 @@
-[32mSTART RequestId: 57b347f9-071d-4a5b-af99-bd764c257212 Version: $LATEST[0m
-[32mEND RequestId: 57b347f9-071d-4a5b-af99-bd764c257212[0m
-[32mREPORT RequestId: 57b347f9-071d-4a5b-af99-bd764c257212	Duration: 21.89 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 10 MB	[0m
-
-{"greetingMessage":"Hello Lina Hovanessian"}

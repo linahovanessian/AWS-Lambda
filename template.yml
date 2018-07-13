@@ -24,3 +24,10 @@ Resources:
       CodeUri: ./build/distributions/AWS-Lambda.zip
       Runtime: java8
       Timeout: 999
+  EmployeeHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: mysqldb_example.EmployeeHandler::handleRequest
+      CodeUri: ./build/distributions/AWS-Lambda.zip
+      Runtime: java8
+      Timeout: 999
